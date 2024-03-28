@@ -10,7 +10,7 @@ COPY app.py score.py /app/
 # Install any needed packages specified in requirements.txt
 # Ensure you have a requirements.txt file with Flask and other dependencies
 COPY requirements.txt /app/
-COPY lightgbm_best_model.pkl /app/
+COPY best_model.pkl /app/
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Make port 5000 available to the world outside this container
