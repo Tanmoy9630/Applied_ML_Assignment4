@@ -6,6 +6,7 @@
    - installing the dependencies
    - copying app.py and score.py
    - launching the app by running “python app.py” upon entry
+     
 -build the docker image using Dockerfile
 -run the docker container with appropriate port bindings
 -in test.py write test_docker(..) function which does the following
@@ -13,7 +14,9 @@
    - sends a request to the localhost endpoint /score (e.g. using requests library)for a sample text
    - checks if the response is as expected
    - close the docker container
+     
 In coverage.txt, produce the coverage report using pytest for the tests in test.py
+
 ### continuous integration
 - write a pre-commit git hook that will run the test.py automatically every time you try to commit the code to your local ‘main’ branch
 - copy and push this pre-commit git hook file to your git repo
